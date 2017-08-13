@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<header class="header">
+  	<nav class="nav">
+  		<a class="logo" href="">
+  			<img src="" width="" height="" alt="логотип Nerd's">
+  		</a>	
+  		<ul class="item">
+  			<li><a href="">Студия</a></li>
+  			<li><a href="">Клиент</a></li>
+  			<li class="current"><a href="">Магазин</a></li>
+  			<li><a href="">Контакты</a></li>
+  		</ul>
+  		<a class="basket" href=""><img href="" alt="Корзина">Корзина</a>
+  	</nav>
+  	<h1 class="title">Магазин готовых шаблонов</h1>
+	</head>
+
+	<main>
+		<section class="Value">
+			<h2>Стоимость:</h2>
+			<form class="filter" method="get" action="">
+				<input type="range" min="0" max="25000" step="1000" value="15000">
+				<p>от 0 до 15 000</p> 
+				<!--Пока не знаю, как это оформить-->
+
+        <fieldset>
+          <legend>Сетка:</legend>
+          <ul>
+            <li class="item">
+              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="Адаптивная" value="Adaptive" checked>
+              Адаптивная
+            </li>
+            <li class="item">
+              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="Фиксированная" value="Fixed">
+              Фиксированная
+            </li>
+            <li class="item">
+              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="Резиновая" value="Rubber">
+              Резиновая
+            </li>		
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Особенности:</legend>
+          <ul>
+            <li class="item">
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Слайдер" checked>
+              Слайдер
+            </li>
+            <li class="item">
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Блок преимуществ">
+              Блок преимуществ
+            </li>	
+            <li class="item">
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Новости" checked>
+              Новости
+            </li>	
+            <li class="item">
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Галерея">
+              Галерея
+            </li>	
+            <li class="item">
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Корзина">
+              Корзина
+            </li>	
+          </ul>
+          </fieldset>
+          <button class="filter-button button" type="submit">Показать</button>
+			</form>
+		</section>
+		<section class="catalog">
+        <h2 class="visually-hidden">Список сайтов</h2>
+        <b>Сортировать</b>
+        <ul class="type">
+        	<li class="current">По цене</li>
+        	<li><a href="">По типу</a></li>
+        	<li><a href="">По названию</a></li>
+        	<li class="arrow"><a href="" alt="стрелка"></a></li>
+        	<li class="arrow"><a href=""></a></li>
+        </ul>	
+        <ul class="list">
+        <!--Тут должен быть список макетов-->
+        </ul>
+        <ul class="pagination">
+          <li class="item item-current"><a>1</a></li>
+          <li class="item"><a href="">2</a></li>
+          <li class="item"><a href="">3</a></li>
+          <li class="item next"><a href="">Следующая</a></li>
+        </ul>
+    </section>  
+	</main>
+
+	<footer class="footer">
+		<section class="contacts">
+			<b>Nerds Design Studio</b>
+			<p>191186, Санкт-Петербург,<br>
+			ул. Б. Конюшенная, д. 19/8<br>
+			<br>
+			тел. +7(812)275-75-75</p>
+			<a class="button" href="">Напиши нам</a>
+		</section>
+		<section class="social">
+			<ul>
+				<li><a class="button" href="">Vk</a></li>
+				<li><a class="button" href="">Facebook</a></li>
+				<li><a class="button" href="">Instagram</a></li>
+			</ul>	
+		</section>
+			<b>Давайте дружить, это выгодно!</b>
+			<p>Скидка 10% для друзей из социальных сетей</p>
+	</footer>	
+
+</body>
+</html>
