@@ -3,35 +3,38 @@
 <head>
 	<meta charset="utf-8">
 	<title>Каталог</title>
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-	<header class="header">
-    <nav class="nav">
-      <a class="logo" href="">
+	<header class="main-header">
+    <nav class="main-navigation">
+      <a class="main-header-logo" href="">
       <img src="img/nerds-logo.svg" width="160" height="65" alt="логотип Nerd's">
       </a>  
-      <ul class="main-menu">
+      <ul class="site-navigation">
         <li><a href="">Студия</a></li>
         <li><a href="">Клиент</a></li>
-        <li><a href="">Магазин</a></li>
+        <li><section class="site-navigation-current"><a href="">Магазин</a></section></li>
         <li><a href="">Контакты</a></li>
       </ul>
       <a class="basket" href=""><img src="img/basket.svg" height="15" width="15" alt="Корзина">Корзина</a>
     </nav>
   </header> 
 
-	<main>
-    <h1 class="title">Магазин готовых шаблонов</h1>
-		<section class="filtres">
+	<main class="main">
+    <h1 class="main-title">Магазин готовых шаблонов</h1>
+    <!--А зачем нужно было переносить заголовок в меню, если у него фон как и у хедера?-->
+		<section class="main-filtres">
       <h2 class="visually-hidden">Фильтр:</h2>
-      <form class="filter" method="get" action="" oninput="dayscountval.value=dayscount.value">
+      <form class="main-filtres-filter" method="get" action="" oninput="dayscountval.value=dayscount.value">
         <label for="value"><legend>Стоимость:</legend></label>
         <input name="value" id="value" type="range" min="0" max="25000" value="15000"> 
         <output name="value"><p>От 0 До 15000</p></output>  
         <!--Не понял как реализовать-->
         <legend>Сетка:</legend>
-        <ul class="item">
+        <ul class="main-filtres-filter-item">
           <li>
             <label>
               <input class="visually-hidden filter-input filter-input-radio" type="radio" name="Адаптивная" value="Adaptive" checked>
@@ -51,7 +54,7 @@
           </li>		
         </ul>
         <legend>Особенности:</legend>
-        <ul class="item">
+        <ul class="main-filtres-filter-item">
           <li>
             <label>
               <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Слайдер" checked>
@@ -86,19 +89,19 @@
         <button class="filter-button button" type="submit">Показать</button>
 			</form>
 		</section>
-		<section class="catalog">
+		<section class="main-catalog">
         <h2 class="visually-hidden">Список сайтов</h2>
         <b>Сортировать</b>
-        <ul class="type">
-        	<li><section class="current">По цене</section></li>
+        <ul class="main-catalog-type">
+        	<li><section class="main-catalog-type-current">По цене</section></li>
         	<li><a href="">По типу</a></li>
         	<li><a href="">По названию</a></li>
         	<li><section class="arrow-current"><a href=""><img src="img/icon-down-dir.svg" width="" height="" alt="Вниз"></a></section></li>
         	<li><section class="arrow"><a href=""><img src="img/icon-up-dir.svg" width="" height="" alt="Вверх"></a></section></li>
         </ul>	
-        <ul class="list">
+        <ul class="main-catalog-list">
         	<li>
-            <section class="item">
+            <section class="main-catalog-list-item">
               <img src="img/img-sedona.jpg" width="360" height="576">
               <img src="img/browser.svg" width="360" height="40">
               <h3>Sedona</h3>
@@ -107,7 +110,7 @@
             </section>
           </li>
           <li>
-            <section class="item">
+            <section class="main-catalog-list-item">
               <img src="img/img-pink.jpg" width="360" height="576">
               <img src="img/browser.svg" width="360" height="40">
               <h3>Pink App</h3>
@@ -116,7 +119,7 @@
             </section>
           </li>
           <li>
-            <section class="item">
+            <section class="main-catalog-list-item">
               <img src="img/img-barbershop.jpg" width="360" height="576">
               <img src="img/browser.svg" width="360" height="40">
               <h3>Barbershop</h3>
@@ -125,7 +128,7 @@
             </section>
           </li>
           <li>
-            <section class="item">
+            <section class="main-catalog-list-item">
               <img src="img/img-mishka.jpg" width="360" height="576">
               <img src="img/browser.svg" width="360" height="40">
               <h3>Mishka</h3>
@@ -134,7 +137,7 @@
             </section>
           </li>
           <li>
-            <section class="item">
+            <section class="main-catalog-list-item">
               <img src="img/img-aplus.jpg" width="360" height="576">
               <img src="img/browser.svg" width="360" height="40">
               <h3>A plus</h3>
@@ -143,7 +146,7 @@
             </section>
           </li>   
           <li>
-            <section class="item">
+            <section class="main-catalog-list-item">
               <img src="img/img-kvast.jpg" width="360" height="576">
               <img src="img/browser.svg" width="360" height="40">
               <h3>Кваст</h3>
@@ -153,16 +156,16 @@
           </li>       
         </ul>
         <ul class="pagination">
-          <li><a class="item item-current" href="">1</a></li>
-          <li><a class="item" href="">2</a></li>
-          <li><a class="item" href="">3</a></li>
-          <li><a class="item next" href="">Следующая</a></li>
+          <li><a class="pagination-item pagination-item-current" href="">1</a></li>
+          <li><a class="pagination-item" href="">2</a></li>
+          <li><a class="pagination-item" href="">3</a></li>
+          <li><a class="pagination-item next" href="">Следующая</a></li>
         </ul>
     </section>  
 	</main>
 
 	<footer class="footer">
-    <section class="contacts">
+    <section class="footer-contacts">
       <h2 class="visually-hidden">Как до нас добраться</h2>
       <img src="img/map.jpg" width="1725" height="808">
       <img src="img/map-marker.png" width="231" height="190">
@@ -172,21 +175,20 @@
       <p>тел. +7(812)275-75-75</p>
       <a class="button" href="">Напиши нам</a>
     </section>
-    <section class="social">
-      <h2 class="visually-hidden">Мы в социальных сетях:</h2>
-      <ul>
-        <li><a class="button" href=""><img src="img/vk-icon.svg" width="26" height="15">Vk</a></li>
-        <li><a class="button" href=""><img src="img/fb-icon.svg" width="12" height="22">Facebook</a></li>
-        <li><a class="button" href=""><img src="img/insta-icon.svg" width="21" height="21">Instagram</a></li>
+    <section class="footer-social">
+      <h2 class="visually-hidden">Мы в социальных сетях</h2>
+      <ul class="footer-social-list">
+        <li><a class="button-social" href=""><img src="img/vk-icon.svg" width="26" height="15" alt="vk"></a></li>
+        <li><a class="button-social" href=""><img src="img/fb-icon.svg" width="12" height="22" alt="facebook"></a></li>
+        <li><a class="button-social" href=""><img src="img/insta-icon.svg" width="21" height="21" alt="instagram"></a></li>
       </ul> 
       <b>Давайте дружить, это выгодно!</b>
       <p>Скидка 10% для друзей из социальных сетей</p>
-    </section>
+    </section>  
   </footer> 
   <section class="modal">
       <h2>Напишите нам</h2>
-      <p>Введите свой логин и пароль.</p>
-      <form class="Contact-Us" action="" method="post">
+      <form class="modal-contact-us" action="" method="post">
         <p>
           <label for="name">Ваше имя:</label>
           <input class="name" id="name" type="text" name="name" placeholder="Представтесь пожалуйста">
@@ -201,7 +203,7 @@
         </p>
         <button class="button" type="submit">Отправить</button>
       </form>
-      <button class="close" type="button"><img src="img/close-cross.svg" width="" height="" alt="Закрыть"></button>
-    </section>
+      <button class="close" type="button-close"><img src="img/close-cross.svg" width="" height="" alt="Закрыть"></button>
+    </section>  
 </body>
-</html>
+</html> 

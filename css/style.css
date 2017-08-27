@@ -1,26 +1,268 @@
 body {
+  margin: 0;
+  padding: 0;
+
   font-size: 16px;
   font-family: "Roboto"  Arial, sans-serif;
-  color: #818181;
-  line-height: 1.5;
+  line-height: 24px;
+  color: #000000;
+
+  background-color: #ffffff;
+  background-image: url("img/background.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
 }
 
+a {
+  text-decoration: none;
+}
 
-h1{
+.main-navigation {
+  font-size: 16px;
+  line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
+
+  background-color: #eeeeee;
+}
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation a,
+.basket {
+  color: #000000;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.basket:hover,
+.basket:focus {
+  color: #fb565a;
+}
+
+.main-advertising {
+  background-color: #eeeeee;
+}
+
+.main-advertising h2 {
   font-size: 55px;
-  font-family: "Roboto"  Arial, sans-serif;
-  color: #818181;
-  line-height: 1;
+  line-height: 55px;
 }
 
+.button {
+  color: #ffffff;
+  text-align: center;
 
-h2{
+  background-color: #fb565a;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #e74246;
+}
+
+.button-green{
+  color:#ffffff;
+  text-align: center;
+
+  background-color: #00ca74;
+}
+
+.button-green:hover,
+.button-green:focus {
+  background-color: #00bc6c;
+}
+
+.button-yellow{
+  color: #ffffff;
+  text-align: center;
+
+  background-color: #efc84a;
+}
+
+.button-yellow:hover,
+.button-yellow:focus {
+  background-color: #eab534;
+}
+
+.main-catalog-list{
+  list-style: none;
+}
+
+.main-catalog-list h3 {
   font-size: 24px;
-  font-family: "Roboto"  Arial, sans-serif;
-  color: #818181;
-  font-weight: bold;
-  line-height: 1.5;
+  line-height: 30px;
 }
 
+.about-us h3 {
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.about-us b {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.about-us-list {
+  list-style: none;
+}
+
+.aside h3 {
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.aside-table-percentages {
+  font-size: 45px;
+  line-height: 10.06px;
+  text-align: center;
+}
+
+.aside-table-scroll {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.partners-items{
+  list-style: none;
+}
+
+.footer {
+  color: #666666;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.footer h2 {
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.footer-social-list {
+  list-style: none;
+}
+
+.button-social {
+  color: #ffffff;
+  background-color: #e1e1e1;
+  border-radius: 50%;
+}
+
+.botton-social:hover,
+.botton-social:focus {
+  background-color: #e74246;
+}
+
+.footer-social b {
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.modal h2 {
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.modal-cantact-us label {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.modal-contact-us input {
+  font: inherit;
+
+  background-color: #ffffff;
+  border: 2px solid #d7dcde;
+}
+
+.modal-contact-us input:hover {
+  border-color: #b4b9bb;
+}
+
+.modal-contact-us input:focus {
+  border-color: #000000;
+}
+
+
+/* Далее для Catalog*/
+.main-title {
+  font-size: 55px;
+  line-height: 55px;
+}
+
+.site-navigation-current {
+  border-bottom: 1px solid red;
+}
+
+.main-filtres-filter-item{
+  list-style: none;
+}
+
+.main-filtres-filter legend {
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase
+}
+
+.filter-button {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase
+
+  color: #000000;
+  background-color: #eeeeee;
+}
+
+.filter-button:hover,
+.filter-button:focus {
+  background-color: #dfdfdf;
+}
+
+.main-catalog b {
+  color: #000000;
+  font-size: 18px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.main-catalog-type a {
+  color: #b2b2b2;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.main-catalog-type-current {
+  color: #000000;
+}
+
+.main-catalog-list-item h3 {
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.pagination {
+  list-style: none;
+}
+
+.pagination a {
+  color: #000000;
+
+  background-color: #eeeeee;
+}
+
+.pagination a:hover,
+.pagination a:focus {
+  background-color: #dfdfdf;
+}
+
+.pagination-item-current a {
+  background-color: #ffffff;
+}
 
 
