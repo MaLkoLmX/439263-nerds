@@ -187,8 +187,11 @@ a {
   border-color: #000000;
 }
 
+.button-close{
+  background-image: url("img/close-cross.svg");
+}
 
-/* Далее для Catalog*/
+
 .main-title {
   font-size: 55px;
   line-height: 55px;
@@ -202,7 +205,7 @@ a {
   list-style: none;
 }
 
-.main-filtres-filter legend {
+.main-filtres-filter h3 {
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase
@@ -234,6 +237,14 @@ a {
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+}
+
+.main-catalog-type .arrow-current {
+  background-image: url("img/icon-down-dir.svg");
+}
+
+.main-catalog-type .arrow {
+  background-image: url("img/icon-up-dir.svg");
 }
 
 .main-catalog-type-current {

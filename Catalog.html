@@ -25,65 +25,47 @@
 
 	<main class="main">
     <h1 class="main-title">Магазин готовых шаблонов</h1>
-    <!--А зачем нужно было переносить заголовок в меню, если у него фон как и у хедера?-->
 		<section class="main-filtres">
       <h2 class="visually-hidden">Фильтр:</h2>
-      <form class="main-filtres-filter" method="get" action="" oninput="dayscountval.value=dayscount.value">
+      <form class="main-filtres-filter" method="get" action="">
         <label for="value"><legend>Стоимость:</legend></label>
         <input name="value" id="value" type="range" min="0" max="25000" value="15000"> 
-        <output name="value"><p>От 0 До 15000</p></output>  
-        <!--Не понял как реализовать-->
-        <legend>Сетка:</legend>
+        <p>От 0 До 15000</p> 
+        <h3>Сетка:</h3>
         <ul class="main-filtres-filter-item">
           <li>
-            <label>
-              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="Адаптивная" value="Adaptive" checked>
-              Адаптивная
-            </label>
+              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="Адаптивная" value="Adaptive" id="filter-adaptive" checked>
+              <label for="filter-adaptive">Адаптивная</label>
           <li>
-            <label>
-              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="Фиксированная" value="Fixed">
-              Фиксированная
-            </label>
+              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="Фиксированная" value="Fixed" if="filter-fixed">
+              <label for="filter-fixed">Фиксированная</label>
           </li>
           <li>
-            <label>
-              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="Резиновая" value="Rubber">
-              Резиновая
-            </label>
+              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="Резиновая" value="Rubber" id="filter-rubber">
+              <label for="filter-rubber">Резиновая</label>
           </li>		
         </ul>
-        <legend>Особенности:</legend>
+        <h3>Особенности:</h3>
         <ul class="main-filtres-filter-item">
           <li>
-            <label>
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Слайдер" checked>
-              Слайдер
-            </label>
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Слайдер" id="slider" checked>
+              <label for="filter-slider">Слайдер</label>
           </li>
           <li>
-            <label>
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Блок преимуществ">
-              Блок преимуществ
-            </label>
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Блок преимуществ" id="filter-advantages">
+              <label for="filter-advantages">Блок преимуществ</label>
           </li>	
           <li>
-            <label>
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Новости" checked>
-              Новости
-            </label>
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Новости" id="filter-news" checked>
+              <label for="filter-news">Новости</label>
           </li>	
           <li>
-            <label>
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Галерея">
-              Галерея
-            </label>
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Галерея" id="filter-gallery">
+              <label for="filter-gallery">Галерея</label>
           </li>	
           <li>
-            <label>
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Корзина">
-              Корзина
-            </label>
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Корзина" id="filter-basket">
+              <label for="filter-basket">Корзина</label>
           </li>	
         </ul>
         <button class="filter-button button" type="submit">Показать</button>
@@ -96,8 +78,8 @@
         	<li><section class="main-catalog-type-current">По цене</section></li>
         	<li><a href="">По типу</a></li>
         	<li><a href="">По названию</a></li>
-        	<li><section class="arrow-current"><a href=""><img src="img/icon-down-dir.svg" width="" height="" alt="Вниз"></a></section></li>
-        	<li><section class="arrow"><a href=""><img src="img/icon-up-dir.svg" width="" height="" alt="Вверх"></a></section></li>
+        	<li><a class="arrow-current" href="">Стрелка вниз</a></li>
+        	<li><a class="arrow" href=""></a>Стрелка вверх</li>
         </ul>	
         <ul class="main-catalog-list">
         	<li>
@@ -203,7 +185,7 @@
         </p>
         <button class="button" type="submit">Отправить</button>
       </form>
-      <button class="close" type="button-close"><img src="img/close-cross.svg" width="" height="" alt="Закрыть"></button>
+      <button class="button-close" type="button-close">Закрыть</button>
     </section>  
 </body>
 </html> 
