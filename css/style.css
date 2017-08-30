@@ -8,7 +8,7 @@ body {
   color: #000000;
 
   background-color: #ffffff;
-  background-image: url("img/background.jpg");
+  background-image: url("img/bg.jpg");
   background-position: top center;
   background-repeat: no-repeat;
 }
@@ -117,7 +117,7 @@ body {
 
 .aside-table-percentages {
   font-size: 45px;
-  line-height: 10.06px;
+  line-height: 10px;
   text-align: center;
 }
 
@@ -201,11 +201,11 @@ body {
   border-bottom: 1px solid red;
 }
 
-.main-filtres-filter-item{
+.main-filters-filter-item{
   list-style: none;
 }
 
-.main-filtres-filter h3 {
+.main-filters-filter h3 {
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase
