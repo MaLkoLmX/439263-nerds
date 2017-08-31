@@ -13,8 +13,15 @@ body {
   background-repeat: no-repeat;
 }
 
-.visually-hidden{
-  visibility: hidden;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .main-navigation {
@@ -283,5 +290,61 @@ body {
 .pagination-item-current a {
   background-color: #ffffff;
 }
+|
+|
+|
+.main-header {
+  width: 100%;
+  margin-bottom: 0px;
 
+  background-color: #eeeeee;
+}
 
+.main-navigation {
+  width: 1200px;
+  height: 132px;
+  margin: 0 auto;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-header-logo {
+  width: 160px;
+  height: 67px;
+  padding-left: 20px;
+  padding-top: 48px;
+
+}
+
+.site-navigation {
+  width: 440px;
+  margin: 0 ;
+  padding: 0;
+
+  list-style: none;
+
+}
+
+.basket {
+  width: 120px;
+  margin: 0;
+  padding-right: 20px;
+  padding-top: 85px;
+
+  list-style: none;
+}
+
+.main-offers-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0;
+  width: 1200px;
+
+  list-style: none;
+}
+
+.main-offers-list li {
+  width: 300px;
+}
