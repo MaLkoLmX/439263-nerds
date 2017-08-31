@@ -307,8 +307,9 @@ body {
 
 .main-navigation {
   width: 1200px;
-  height: 132px;
+  height: 116px;
   margin: 0 auto;
+  margin-bottom: 18px;
   padding: 10px;
   display: flex;
   justify-content: space-between;
@@ -344,6 +345,7 @@ body {
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
+  margin-bottom: 82px;
   padding: 0;
   width: 1200px;
 
@@ -352,4 +354,99 @@ body {
 
 .main-offers-list li {
   width: 300px;
+}
+
+.main .index-columns {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0px;
+}
+
+.main-advertising{
+  height: 414px;
+  margin-bottom: 81px;
+}
+
+.index-columns {
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 20px;
+  margin-botton: 78px;
+}
+
+.about-us {
+  width: 660px;
+}
+
+.aside {
+  width: 360px;
+}
+
+.partners-items {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-bottom: 82px;
+  padding: 0;
+  width: 1200px;
+}
+
+.footer {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0px;
+}
+
+.footer-contacts {
+  margin-rigth: 20px;
+  margin-bottom: 55px;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0;
+  width: 1200px;
+}  
+
+.footer-social-list {
+  width: 260px;
+  margin: 0;
+  margin-left: auto;
+}
+
+.footer-social .discount {
+  width: 560px;
+
+  margin-left: 420px;
+  margin-top: 80px;
+}
+|
+|
+|
+.main-filters {
+  width: 260px;
+}
+
+.main-catalog {
+  width: 760px;
+}
+
+.catalog-columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+
+.main-catalog-list-item {
+  width: 360px;
+  margin-bottom: 35px;
+  margin-right: px;
 }
