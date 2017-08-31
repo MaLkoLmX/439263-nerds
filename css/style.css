@@ -433,9 +433,22 @@ body {
   width: 760px;
 }
 
+.main-title {
+  width: 1200px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 181px;
+  margin-top: 85px;
+}
+
 .catalog-columns {
   display: flex;
   justify-content: space-between;
+
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0px;
+
 }
 
 .main-catalog-list {
