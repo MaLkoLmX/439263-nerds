@@ -245,6 +245,10 @@ body {
   text-transform: uppercase;
 }
 
+.main-catalog-type {
+  list-style: none;
+}
+
 .main-catalog-type a {
   color: #b2b2b2;
   font-size: 14px;
@@ -263,6 +267,10 @@ body {
 
 .main-catalog-type-current {
   color: #000000;
+}
+
+.main-catalog-list {
+  list-style: none;
 }
 
 .main-catalog-list-item h3 {
