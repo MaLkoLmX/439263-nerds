@@ -8,9 +8,6 @@ body {
   color: #000000;
 
   background-color: #ffffff;
-  background-image: url("img/bg.jpg");
-  background-position: top center;
-  background-repeat: no-repeat;
 }
 
 .visually-hidden {
