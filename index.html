@@ -27,10 +27,9 @@
   	<h1 class="visually-hidden">Магазин готовых шаблонов</h1>
     <div class=".slider">
   	  <section class="main-advertising">
-  		  <h2>Долго, дорого, скрупулезно.</h2>
+  		  <h2>Долго, дорого,<br> скрупулезно.</h2>
   		  <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>	
   		  <a class="button" href="">Узнать больше</a>	  
-        <div class="slider-img"></div>
       </section>  
       <section class="main-advertising visually-hidden">
         <h2>Любим математику как никто другой</h2>
@@ -144,21 +143,25 @@
   <section class="modal">
       <h2>Напишите нам</h2>
       <form class="modal-contact-us" action="" method="post">
+      <div class="login">
         <p>
-          <label for="name">Ваше имя:</label>
+          <label for="name">Ваше имя:</label><br>
           <input class="name" id="name" type="text" name="name" placeholder="Представтесь пожалуйста">
         </p>
         <p>
-          <label for="email">Ваш e-mail:</label>
-          <input class="e-mail" id="email" type="password" name="e-mail" placeholder="Для отправки ответа">
+          <label for="email">Ваш e-mail:</label><br>
+          <input class="email" id="email" type="password" name="e-mail" placeholder="Для отправки ответа">
         </p>
+      </div> 
+      <div class="send"> 
         <p class="login-password-info">
-          <label for="text">Текст письма:</label>
+          <label for="text">Текст письма:</label><br>
           <input class="text" id="text" name="text" placeholder="В свободной форме">
         </p>
         <button class="button" type="submit">Отправить</button>
+      </div>  
       </form>
       <button class="button-close" type="button">Закрыть</button>
-    </section>  
+  </section>  
 </body>
 </html>	
