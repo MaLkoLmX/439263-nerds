@@ -61,6 +61,7 @@ body {
 }
 
 .button {
+  display: block;
   padding: 20px 45px;
   margin-top: 41px;
 
@@ -69,6 +70,22 @@ body {
   text-decoration: none;
 
   background-color: #fb565a;
+}
+
+.main-advertising .button {
+  width: 240px;
+}
+
+.main-offers .button {
+  width: 160px;
+}
+
+.information .button {
+  width: 220px;
+}
+
+.modal .button {
+  width: 260px;
 }
 
 .button:hover,
