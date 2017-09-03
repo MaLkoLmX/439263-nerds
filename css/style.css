@@ -61,8 +61,8 @@ body {
 }
 
 .button {
-  display: block;
-  padding: 20px 45px;
+  display: inline-block;
+  padding: 16px 45px;
   margin-top: 41px;
 
   color: #ffffff;
@@ -70,22 +70,6 @@ body {
   text-decoration: none;
 
   background-color: #fb565a;
-}
-
-.main-advertising .button {
-  width: 240px;
-}
-
-.main-offers .button {
-  width: 160px;
-}
-
-.information .button {
-  width: 220px;
-}
-
-.modal .button {
-  width: 260px;
 }
 
 .button:hover,
@@ -220,8 +204,8 @@ body {
 
 .button-close{
   position: absolute;
-  top: 67px;
-  right: 91px;
+  top: 15px;
+  right: 212px;
 
   width: 24px;
   height: 24px;
@@ -370,9 +354,14 @@ body {
   padding-top: 82px;
 
   list-style: none;
+
+  background-image: url("../img/basket.svg");
+  background-repeat: no-repeat;
+  background-position: left;
 }
 
 .slider {
+  position: relative;
   margin: 0 auto;
   margin-bottom: 82px;
   padding: 0 20px;
@@ -574,4 +563,80 @@ body {
 .modal-contacts-us .send {
   display: flex;
   flex-direction: column;
+}
+|
+|
+|
+.range-filter {
+  width: 240px;
+}
+
+.range-controls {
+  position: relative;
+  height: 41px;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  background: #f1f1f1;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: #d7dcde;
+}
+
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+  background: #00ca74;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 30px;
+  left: 0px;
+  width: 4px;
+  height: 4px;
+  cursor: pointer;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  background: #ababab;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+}
+
+.range-controls .toggle-min {
+  left: 20px;
+}
+
+.range-controls .toggle-max {
+  left: 145px;
+}
+
+.price-controls {
+  font-size: 0;
+}
+
+.price-controls label {
+  font-size: 16px;
+  display: inline-block;
+  width: 50%;
+}
+
+.max-price {
+  text-align: right;
+}
+
+.price-controls input {
+  font-family: 'Roboto', 'Arial', sans-serif;
+  font-size: 16px;
+  width: 60px;
+  margin-left: 10px;
+  padding: 8px 10px;
+  text-align: center;
+  color: #283136;
+  border: none;
+  border-radius: 5px;
+  background: #f1f1f1;
 }

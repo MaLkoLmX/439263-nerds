@@ -19,7 +19,7 @@
         <li class="site-navigation-current"><a href="">Магазин</a></li>
         <li><a href="">Контакты</a></li>
       </ul>
-      <a class="basket" href=""><img src="img/basket.svg" height="15" width="15" alt="Корзина">Корзина</a>
+      <a class="basket" href="">Корзина</a>
     </nav>
   </header> 
 
@@ -29,9 +29,20 @@
 		<section class="main-filters">
       <h2 class="visually-hidden">Фильтр:</h2>
       <form class="main-filters-filter" method="get" action="">
-        <label for="value"><legend>Стоимость:</legend></label>
-        <input name="value" id="value" type="range" min="0" max="25000" value="15000"> 
-        <p>От 0 До 15000</p> 
+        <h3>Стоимость:</h3>
+        <div class="range-filter">
+        <div class="range-controls">
+          <div class="scale">
+            <div class="bar" style="margin-left: 0%; width: 70%"></div>
+          </div>
+          <div class="toggle toggle-min"></div>
+          <div class="toggle toggle-max"></div>
+        </div>
+        <div class="price-controls">
+          <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+          <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+        </div>
+      </div>
         <h3>Сетка:</h3>
         <ul class="main-filters-filter-item">
           <li>
@@ -150,7 +161,7 @@
       <p>191186, Санкт-Петербург,
       ул. Б. Конюшенная, д. 19/8</p>
       <p>тел. +7(812)275-75-75</p>
-      <a class="button" href="">Напиши нам</a>
+      <a class="button" href="">Напишите нам</a>
     </section>  
     </section>
     <section class="footer-social">
@@ -169,21 +180,25 @@
   <section class="modal">
       <h2>Напишите нам</h2>
       <form class="modal-contact-us" action="" method="post">
+      <div class="login">
         <p>
-          <label for="name">Ваше имя:</label>
+          <label for="name">Ваше имя:</label><br>
           <input class="name" id="name" type="text" name="name" placeholder="Представтесь пожалуйста">
         </p>
         <p>
-          <label for="email">Ваш e-mail:</label>
-          <input class="e-mail" id="email" type="password" name="e-mail" placeholder="Для отправки ответа">
+          <label for="email">Ваш e-mail:</label><br>
+          <input class="email" id="email" type="password" name="e-mail" placeholder="Для отправки ответа">
         </p>
+      </div> 
+      <div class="send"> 
         <p class="login-password-info">
-          <label for="text">Текст письма:</label>
+          <label for="text">Текст письма:</label><br>
           <input class="text" id="text" name="text" placeholder="В свободной форме">
         </p>
         <button class="button" type="submit">Отправить</button>
+      </div>  
       </form>
-      <button class="button-close" type="button">Закрыть</button>
-    </section>  
+      <button class="button-close" type="button"><p class="visually-hidden">Закрыть</p></button>
+  </section>  
 </body>
 </html> 
