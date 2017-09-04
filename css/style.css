@@ -108,9 +108,6 @@ input[type="radio"].visually-hidden {
   color: #fb565a;
 }
 
-.main-advertising {
-  background-color: #eeeeee;
-}
 
 .main-advertising h2 {
   font-size: 55px;
@@ -385,13 +382,15 @@ input[type="radio"].visually-hidden {
 }
 
 .main-advertising {
-  width: 1160px;
-  height: 413px;
+  width:100%;
+  height:100%;
   padding: 0 20px;
 
   background-image: url("../img/slide1.png");
   background-repeat: no-repeat;
   background-position: right;
+
+  background-color: #eeeeee;
 }
 
 .main-offers-list {
@@ -414,10 +413,6 @@ input[type="radio"].visually-hidden {
   margin: 0 auto;
   padding: 0 20px;
   margin-bottom: 79px;
-}
-
-.main-advertising{
-  margin-bottom: 81px;
 }
 
 .index-columns {
@@ -452,10 +447,10 @@ input[type="radio"].visually-hidden {
 
 .footer-contacts {
   position: relative;
-  width: 1160px;
+  width: 1440px;
   height: 416px;
   background-image: url("../img/map.jpg");
-  margin-rigth: 20px;
+  margin: 0 20px;
   margin-bottom: 69px;
 }
 
