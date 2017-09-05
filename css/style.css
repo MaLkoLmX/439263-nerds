@@ -37,7 +37,6 @@ input[type="radio"].visually-hidden {
 
 .main-header {
   width: 100%;
-  margin: 0px auto;
 
   background-color: #eeeeee;
 }
@@ -107,7 +106,6 @@ input[type="radio"].visually-hidden {
 
 .main {
   width: 100%;
-  margin: 0px auto;
 }
 
 .main-advertising h2 {
@@ -173,11 +171,6 @@ input[type="radio"].visually-hidden {
 .button-yellow:hover,
 .button-yellow:focus {
   background-color: #eab534;
-}
-
-.main-offers {
-  width: 100%;
-  margin: 0 auto;
 }
 
 .main-offers-list {
@@ -279,7 +272,6 @@ input[type="radio"].visually-hidden {
 
 .footer {
   width: 100%;
-  margin: 0 auto;
   color: #666666;
   font-size: 16px;
   line-height: 18px;
@@ -393,7 +385,7 @@ input[type="radio"].visually-hidden {
 .main-title {
   width: 100%;
   text-align: center;
-  margin: 0 auto;
+  margin: 0;
   margin-bottom: 60px;
   padding-top: 85px;
   padding-bottom: 117px;
