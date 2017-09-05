@@ -403,11 +403,54 @@ input[type="radio"].visually-hidden {
   width: 80px;
   height: 80px;
   border-radius: 50%;
+  background-image: url("../img/social/vk.svg")
 }
 
 .botton-social:hover,
 .botton-social:focus {
   background-color: #e74246;
+}
+
+.button-social-vk {
+
+  background-image: url("../img/social/vk.svg")
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.button-social-vk:hover,
+.button-social-vk:focus {
+  background-image: url("../img/")
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.button-social-fb {
+
+  background-image: url("../img/social/fb.svg")
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.button-social-fb:hover,
+.button-social-fb:focus {
+  background-image: url("../img/")
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.button-social-inst {
+
+  background-image: url("../img/social/inst.svg")
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.button-social-inst:hover,
+.button-social-inst:focus {
+  background-image: url("../img/")
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .footer-social b {
