@@ -46,7 +46,6 @@ input[type="radio"].visually-hidden {
   margin: 0 auto;
   padding: 0 20px;
   padding-top: 49px;
-  padding-bottom: 18px;
 
   display: flex;
   justify-content: space-between;
@@ -108,23 +107,60 @@ input[type="radio"].visually-hidden {
   width: 100%;
 }
 
-.main-advertising h2 {
-  margin: 0;
-
-  font-size: 55px;
-  line-height: 55px;
-}
-
 .slider {
+  position:relative;
   margin-bottom: 84px;
 
   background-color: #eeeeee;
 }
 
+.slider input[type=radio] {
+    position:absolute;
+    opacity:0;
+}
+.slider-controls{
+    position:absolute;
+    bottom:94px;
+    left:50%;
+    width:200px;
+    height:10px;
+    margin-left:-100px;
+    text-align:center;
+    z-index:1000;
+}
+
+.slider-controls label{
+    display:inline-block;
+    width: 8px;
+    height: 8px;
+    margin:0 3px;
+    background:white;
+    border: 5px solid white;
+    vertical-align:top;
+    border-radius:50%;
+    cursor:pointer;
+}
+
+.main-advertising {
+  width: 1160px;
+  height: 428px;
+  padding: 0 20px;
+  margin: 0px auto;
+  display: none;
+}
+
 .slide-text{
   width:380px;
-  padding:30px 0;
+  padding-bottom: 76px;
+  padding-top: 86px;
 }  
+
+.slide-title {
+  font-size: 50px;
+  line-height: 55px;
+  font-weight: bold;
+  color: black;
+}
 
 .slide-text .button {
   width: 240px;
@@ -133,28 +169,33 @@ input[type="radio"].visually-hidden {
 .main-advertising:nth-child(1){
     background-image:url('../img/slide1.png');
     background-repeat:no-repeat;
-    background-position:100% 10px;
+    background-position: 452px 15px;
 }
 .main-advertising:nth-child(2){
     background-image:url('../img/slide2.png');
     background-repeat:no-repeat;
-    background-position:100% 10px;
+    background-position: 514px 10px;
 }
 .main-advertising:nth-child(3){
     background-image:url('../img/slide3.png');
     background-repeat:no-repeat;
-    background-position:100% 0;
+    background-position: 420px 20px;
 }
 
-.main-advertising {
-  width: 1160px;
-  height: 413px;
-  padding: 0 20px;
-  margin: 0px auto;
+#btn-1:checked ~ .slider-controls label[for="btn-1"],
+#btn-2:checked ~ .slider-controls label[for="btn-2"],
+#btn-3:checked ~ .slider-controls label[for="btn-3"] { 
+    background:#c1c1c1;
+}
 
-  background-image: url("../img/slide1.png");
-  background-repeat: no-repeat;
-  background-position: right;
+#btn-1:checked ~ .slides .main-advertising:nth-child(1) { 
+    display: block;
+}
+#btn-2:checked ~ .slides .main-advertising:nth-child(2) { 
+    display: block;
+}
+#btn-3:checked ~ .slides .main-advertising:nth-child(3) { 
+    display: block;
 }
 
 .button {
@@ -352,7 +393,12 @@ input[type="radio"].visually-hidden {
   margin-right: 140px;
 }
 
+.footer-social-list li {
+  padding-left: 12px;
+}
+
 .button-social {
+  display: block;
   background-color: #e1e1e1;
   width: 80px;
   height: 80px;
