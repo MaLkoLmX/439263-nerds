@@ -463,6 +463,8 @@ input[type="radio"].visually-hidden {
 }
 
 .modal h2 {
+  margin: 0;
+  margin-bottom: 50px;
   font-size: 45px;
   line-height: 45px;
 }
@@ -470,6 +472,7 @@ input[type="radio"].visually-hidden {
 .modal-cantact-us label {
   font-size: 16px;
   line-height: 18px;
+  font-weight: bold;
 }
 
 .modal-contact-us input {
@@ -489,8 +492,8 @@ input[type="radio"].visually-hidden {
 
 .button-close{
   position: absolute;
-  top: 15px;
-  right: 212px;
+  top: 80px;
+  right: 90px;
   border: none;
   background-color: #ffffff;
 
@@ -500,6 +503,8 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/close-cross.svg");
   background-repeat: no-repeat;
   background-position: center;
+
+  cursor: pointer;
 }
 /*Catalog*/
 .main-title {
@@ -708,12 +713,19 @@ input[type="radio"].visually-hidden {
 }
 /*Modal*/
 .modal {
-  position: relative;
+  position: fixed;
+  top: 180px;
+  left: 50%;
 
   width: 960px;
-  height: 590px;
   margin: 0 auto;
-  padding: 0 20px;
+  margin-left: -540px;
+  padding-top: 80px;
+  padding-bottom: 85px;
+  padding-left: 100px;
+
+  background-color: #ffffff;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7);
 }
 
 .modal-contact-us {
