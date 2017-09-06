@@ -302,7 +302,22 @@ input[type="radio"].visually-hidden {
 }
 
 .about-us-list li {
+  position: relative;
+
   margin-bottom: 30px;
+}
+
+.about-us-list li::before {
+  content: "";
+
+  position: absolute;
+  top: 11px;
+  left: -37px;
+
+  width: 25px;
+  height: 2px;
+
+  background-color: #fb565a;
 }
 
 .aside {
