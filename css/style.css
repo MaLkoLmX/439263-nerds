@@ -437,15 +437,6 @@ input[type="radio"].visually-hidden {
   background-color: #e74246;
 }
 
-.button-social-vk {
-}
-
-.button-social-fb {
-}
-
-.button-social-inst {
-}
-
 .footer-social b {
   font-size: 36px;
   line-height: 36px;
@@ -586,8 +577,10 @@ input[type="radio"].visually-hidden {
 
 .main-catalog-type {
   display: flex;
+  justify-content: space-between;
   width: 360px;
   margin: 0;
+  margin-left: auto;
   list-style: none;
 }
 
@@ -628,6 +621,7 @@ input[type="radio"].visually-hidden {
   height: 10px;
   background-image: url("../img/icon-down-dir.svg");
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .arrow {
@@ -635,6 +629,7 @@ input[type="radio"].visually-hidden {
   height: 10px;
   background-image: url("../img/icon-up-dir.svg");
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .main-catalog-type-current {
@@ -660,15 +655,18 @@ input[type="radio"].visually-hidden {
 .pagination {
   display: flex;
   width: 443px;
+  margin: 0;
   padding: 0;
 
   list-style: none;
 }
 
 .pagination a {
-  padding: 20px 20px;
+  display: block;
+  padding: 9px 16px;
   margin-right: 20px;
 
+  text-align: center;
   color: #000000;
   text-decoration: none;
 
@@ -680,13 +678,13 @@ input[type="radio"].visually-hidden {
   background-color: #dfdfdf;
 }
 
-.pagination-item-current a {
+.pagination-active a {
   border: 3px solid #eeeeee;
   background-color: #ffffff;
 }
 
 .pagination .next {
-
+  width: 260px;
 }
 /*Modal*/
 .modal {
