@@ -754,6 +754,17 @@ input[type="radio"].visually-hidden {
   margin-bottom: 30px;
 }
 
+.browser {
+  width: 360px;
+  height: 40px;
+
+  background-image: url("../img/browser.svg")
+}
+
+.main-catalog-list-item:hover .browser {
+  background-image: url("../img/browser-active.svg");
+}
+
 .main-catalog-list li {
   margin-right: 40px;
   margin-bottom: 30px;
