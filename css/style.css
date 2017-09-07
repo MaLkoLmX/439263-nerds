@@ -298,7 +298,7 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
   width: 300px;
-  margin-right: 100px;
+  padding-right: 90px;
 }
 
 .main-offers-list h3 {
@@ -348,6 +348,7 @@ input[type="radio"].visually-hidden {
 }
 
 .about-us-list {
+  margin-top: 20px;
   list-style: none;
 }
 
