@@ -687,6 +687,7 @@ input[type="radio"].visually-hidden {
 }
 
 .main-filters-filter-item{
+  position: relative;
   margin: 0;
   margin-bottom: 25px;
   list-style: none;
@@ -749,7 +750,7 @@ input[type="radio"].visually-hidden {
 }
 
 .main-catalog-list-item {
-  position: relevant;
+  position: relative;
   width: 360px;
   margin-bottom: 30px;
 }
@@ -777,6 +778,7 @@ input[type="radio"].visually-hidden {
 .main-catalog-list-item .card {
   position: absolute;
   display: none;
+  bottom: 0;
   width: 360px;
   bottom: 0px;
 
