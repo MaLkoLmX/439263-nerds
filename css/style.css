@@ -338,7 +338,6 @@ input[type="radio"].visually-hidden {
   font-size: 16px;
   line-height: 24px;
   text-transform: uppercase;
-  font-weight: normal;
 }
 
 .about-us p {
@@ -780,11 +779,22 @@ input[type="radio"].visually-hidden {
   display: none;
   bottom: 0;
   width: 360px;
-  bottom: 0px;
+  padding-top: 10px;
+  padding-bottom: 45px;
 
   text-align: center;
 
   background-color: #eeeeee;
+}
+
+.card h3 {
+  margin: 0;
+  margin-top: 10px;
+}
+
+.card p {
+  margin: 0;
+  margin-top: 10px;
 }
 
 .main-catalog-list-item:hover .card {
@@ -824,6 +834,8 @@ input[type="radio"].visually-hidden {
 
 
 .button-price {
+  margin: 0 auto;
+  margin-top: 29px;
   width: 200px;
   text-transform: uppercase;
 
