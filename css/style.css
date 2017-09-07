@@ -776,12 +776,17 @@ input[type="radio"].visually-hidden {
 
 .main-catalog-list-item .card {
   position: absolute;
+  display: none;
   width: 360px;
   bottom: 0px;
 
   text-align: center;
 
   background-color: #eeeeee;
+}
+
+.main-catalog-list-item:hover .card {
+  display: block;
 }
 
 .main-catalog-type a {
