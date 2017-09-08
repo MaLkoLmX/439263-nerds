@@ -1020,6 +1020,24 @@ input[type="radio"].visually-hidden {
   width: 270px;
 }
 /*Modal*/
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .modal {
   display: none;
   position: fixed;
@@ -1034,6 +1052,12 @@ input[type="radio"].visually-hidden {
 
   background-color: #ffffff;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7);
+}
+
+.modal-show {
+  display: block;
+
+  animation: bounce 0.6s;
 }
 
 .modal-contact-us {
