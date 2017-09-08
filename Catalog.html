@@ -44,40 +44,65 @@
         </div>
       </div>
         <h3>Сетка:</h3>
-        <ul class="main-filters-filter-item radio">
+        <ul class="main-filters-filter-item">
           <li>
-              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="Адаптивная" value="Adaptive" id="filter-adaptive" checked>
-              <label for="filter-adaptive">Адаптивная</label>
-          <li>
-              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="Фиксированная" value="Fixed" if="filter-fixed">
-              <label for="filter-fixed">Фиксированная</label>
+            <label class="radio">
+                <input class="filter-input-radio" type="radio" name="Адаптивная" value="Adaptive" id="filter-adaptive" checked>
+                <span class="radio-indicator"></span>
+                Адаптивная
+            </label>
           </li>
-          <li>
-              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="Резиновая" value="Rubber" id="filter-rubber">
-              <label for="filter-rubber">Резиновая</label>
-          </li>		
+          <li>  
+            <label class="radio">
+                <input class="filter-input-radio" type="radio" name="Фиксированная" value="Fixed" if="filter-fixed">
+                <span class="radio-indicator"></span>
+                Фиксированная
+            </label>
+          </li>
+          <li>  
+            <label class="radio">
+                <input class="filter-input-radio" type="radio" name="Резиновая" value="Rubber" id="filter-rubber">
+                <span class="radio-indicator"></span>
+                Резиновая
+            </label>
+          </li>  	
         </ul>
         <h3>Особенности:</h3>
-        <ul class="main-filters-filter-item checkbox">
+        <ul class="main-filters-filter-item">
           <li>
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Слайдер" id="slider" checked>
-              <label for="filter-slider">Слайдер</label>
+            <label class="checkbox">
+              <input class="filter-input-checkbox" type="checkbox" name="Слайдер" id="slider" checked>
+              <span class="checkbox-indicator"></span>
+              Слайдер
+            </label>  
           </li>
           <li>
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Блок преимуществ" id="filter-advantages">
-              <label for="filter-advantages">Блок преимуществ</label>
+            <label class="checkbox">
+              <input class="filter-input-checkbox" type="checkbox" name="Блок преимуществ" id="filter-advantages">
+              <span class="checkbox-indicator"></span>
+              Блок преимуществ
+            </label>  
           </li>	
           <li>
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Новости" id="filter-news" checked>
-              <label for="filter-news">Новости</label>
+            <label class="checkbox">
+              <input class="filter-input-checkbox" type="checkbox" name="Новости" id="filter-news" checked>
+              <span class="checkbox-indicator"></span>
+              Новости
+            </label>  
           </li>	
           <li>
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Галерея" id="filter-gallery">
-              <label for="filter-gallery">Галерея</label>
+            <label class="checkbox">
+              <input class="filter-input-checkbox" type="checkbox" name="Галерея" id="filter-gallery">
+              <span class="checkbox-indicator"></span>
+              Галерея
+            </label>  
           </li>	
           <li>
-              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Корзина" id="filter-basket">
-              <label for="filter-basket">Корзина</label>
+            <label class="checkbox">
+              <input class="filter-input-checkbox" type="checkbox" name="Корзина" id="filter-basket">
+              <span class="checkbox-indicator"></span>
+              Корзина
+            </label>  
           </li>	
         </ul>
         <button class="filter-button button" type="submit">Показать</button>

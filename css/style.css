@@ -666,7 +666,7 @@ input[type="radio"].visually-hidden {
   width: 1160px;
   margin: 0 auto;
   padding: 0 20px;
-  margin-bottom: 58px;
+  margin-bottom: 64px;
 }
 
 .main-catalog-list {
@@ -698,16 +698,105 @@ input[type="radio"].visually-hidden {
 
 .main-filters-filter-item{
   margin: 0;
-  margin-bottom: 30px;
+  padding-left: 30px;
+  margin-bottom: 47px;
   list-style: none;
+}
+
+.filter-input-radio {
+  display: none;
 }
 
 .main-filters-filter-item li {
   position: relative;
 
-  padding-bottom: 15px;
+  margin-bottom: 15px;
 
   cursor: pointer;
+}
+
+.radio input[type="radio"] + .radio-indicator {
+  position: absolute;
+  top: 0;
+  left: -30px;
+
+  width: 17px;
+  height: 17px;
+
+  border: 4px solid #a6a6a6;
+  border-radius: 50%;
+}
+
+.radio input[type="radio"]:focus + .radio-indicator {
+  border-color: #4d4d4d;
+}
+
+.radio input[type="radio"]:checked + .radio-indicator::before,
+.radio input[type="radio"]:checked + .radio-indicator::after {
+  content: "";
+
+  position: absolute;
+  top: 4px;
+  left: 4px;
+
+  width: 9px;
+  height: 9px;
+
+  border-radius: 50%;
+
+  background-color: #a6a6a6;
+}
+/*checkbox*/
+.filter-input-checkbox {
+  display: none;
+}
+.checkbox input[type="checkbox"] + .checkbox-indicator {
+  position: absolute;
+  top: -3px;
+  left: -30px;
+
+  width: 23px;
+  height: 23px;
+
+  border: 2px solid #a6a6a6;
+}
+
+.checkbox input[type="checkbox"]:focus + .checkbox-indicator {
+  border-color: #4d4d4d;
+}
+
+.checkbox input[type="checkbox"]:checked + .checkbox-indicator::before {
+  content: "";
+
+  position: absolute;
+  top: 7px;
+  left: 8px;
+
+  width: 22px;
+  height: 3px;
+
+  background-color: #a6a6a6;
+}
+
+.checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
+  content: "";
+
+  position: absolute;
+  top: 10px;
+  left: 4px;
+
+  width: 8px;
+  height: 3px;
+
+  background-color: #a6a6a6;
+}
+
+.checkbox input[type="checkbox"]:checked + .checkbox-indicator::before {
+  transform: rotate(-45deg);
+}
+
+.checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
+  transform: rotate(45deg);
 }
 
 .main-filters-filter h3 {
@@ -923,7 +1012,7 @@ input[type="radio"].visually-hidden {
 }
 
 .pagination-active a {
-  border: 3px solid #eeeeee;
+  outline: 3px solid #eeeeee;
   background-color: #ffffff;
 }
 
@@ -937,7 +1026,7 @@ input[type="radio"].visually-hidden {
   top: 180px;
   left: 50%;
 
-  width: 960px;
+  width: 870px;
   margin: 0 auto;
   margin-left: -540px;
   padding: 80px 0;
@@ -992,8 +1081,8 @@ input[type="radio"].visually-hidden {
 
 .button-close{
   position: absolute;
-  top: 80px;
-  right: 90px;
+  top: 90px;
+  right: 115px;
 
   width: 24px;
   height: 24px;
@@ -1001,6 +1090,7 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
   border: none;
 
+  outline: none;
   cursor: pointer;
 }
 
@@ -1022,6 +1112,16 @@ input[type="radio"].visually-hidden {
 
 .button-close::after {
   transform: rotate(-45deg);
+}
+
+.button-close:hover::after,
+.button-close:hover::before {
+  background-color: #fb565a;
+}
+
+.button-close:active::after,
+.button-close:active::before {
+  background-color: #ffeeee;
 }
 
 .modal-contact-us .name {
