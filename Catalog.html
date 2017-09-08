@@ -44,7 +44,7 @@
         </div>
       </div>
         <h3>Сетка:</h3>
-        <ul class="main-filters-filter-item">
+        <ul class="main-filters-filter-item radio">
           <li>
               <input class="visually-hidden filter-input filter-input-radio" type="radio" name="Адаптивная" value="Adaptive" id="filter-adaptive" checked>
               <label for="filter-adaptive">Адаптивная</label>
@@ -58,7 +58,7 @@
           </li>		
         </ul>
         <h3>Особенности:</h3>
-        <ul class="main-filters-filter-item">
+        <ul class="main-filters-filter-item checkbox">
           <li>
               <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Слайдер" id="slider" checked>
               <label for="filter-slider">Слайдер</label>
@@ -86,7 +86,7 @@
 		<section class="main-catalog">
         <h2 class="visually-hidden">Список сайтов</h2>
         <div class="sorting">
-          <b>Сортировать</b>
+          <b>Сортировать:</b>
           <ul class="main-catalog-type">
         	  <li class="main-catalog-type-current">По цене</li>
         	  <li><a href="">По типу</a></li>
@@ -102,7 +102,6 @@
         <ul class="main-catalog-list">
         	<li>
             <section class="main-catalog-list-item">
-              <div class="browser"></div>
               <img src="img/img-sedona.jpg" width="360" height="576">
               <div class="card">
                 <h3>Sedona</h3>
@@ -113,7 +112,6 @@
           </li>
           <li>
             <section class="main-catalog-list-item">
-              <div class="browser"></div>
               <img src="img/img-pink.jpg" width="360" height="576">
               <div class="card">
                 <h3>Pink App</h3>
@@ -124,7 +122,6 @@
           </li>
           <li>
             <section class="main-catalog-list-item">
-              <div class="browser"></div>
               <img src="img/img-barbershop.jpg" width="360" height="576">
               <div class="card">
                 <h3>Barbershop</h3>
@@ -135,7 +132,6 @@
           </li>
           <li>
             <section class="main-catalog-list-item">
-              <div class="browser"></div>
               <img src="img/img-mishka.jpg" width="360" height="576">
               <div class="card">
                 <h3>Mishka</h3>
@@ -146,7 +142,6 @@
           </li>
           <li>
             <section class="main-catalog-list-item">
-              <div class="browser"></div>
               <img src="img/img-aplus.jpg" width="360" height="576">
               <div class="card">
                 <h3>A plus</h3>
@@ -157,7 +152,6 @@
           </li>   
           <li>
             <section class="main-catalog-list-item">
-              <div class="browser"></div>
               <img src="img/img-kvast.jpg" width="360" height="576">
               <div class="card">
                 <h3>Кваст</h3>
@@ -182,8 +176,7 @@
     <section class="information">
       <h2 class="visually-hidden">Как до нас добраться</h2>
       <h2>Nerds Design Studio</h2>
-      <p>191186, Санкт-Петербург,
-      ул. Б. Конюшенная, д. 19/8</p>
+      <p>191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
       <p>тел. +7(812)275-75-75</p>
       <a class="button button-information" href="">Напишите нам</a>
     </section>  
@@ -223,7 +216,7 @@
       <div class="send"> 
         <p class="login-password-info">
           <label for="text">Текст письма:</label><br>
-          <input class="text" id="text" name="text" placeholder="В свободной форме">
+          <input class="text" id="text" type="text" name="text" placeholder="В свободной форме">
         </p>
         <button class="button" type="submit">Отправить</button>
       </div>  
