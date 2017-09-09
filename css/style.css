@@ -544,16 +544,19 @@ input[type="radio"].visually-hidden {
   position: relative;
   width: 100%;
   height: 416px;
+  height: 416px;
+  margin: 0 auto;
   background-image: url("../img/map.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-size: cover;
   margin-bottom: 69px;
 }
 
 .information {
   position: absolute;
-  left: 95px;
+  left: 50%;
   top: 55px;
+  margin-left: -580px;
   width: 265px;
   height: 256px;
   padding-left: 49px;
@@ -698,7 +701,7 @@ input[type="radio"].visually-hidden {
 
 .main-filters-filter-item{
   margin: 0;
-  padding-left: 30px;
+  padding-left: 33px;
   margin-bottom: 47px;
   list-style: none;
 }
@@ -718,7 +721,7 @@ input[type="radio"].visually-hidden {
 .radio input[type="radio"] + .radio-indicator {
   position: absolute;
   top: 0;
-  left: -30px;
+  left: -35px;
 
   width: 17px;
   height: 17px;
@@ -753,7 +756,7 @@ input[type="radio"].visually-hidden {
 .checkbox input[type="checkbox"] + .checkbox-indicator {
   position: absolute;
   top: -3px;
-  left: -30px;
+  left: -35px;
 
   width: 23px;
   height: 23px;
@@ -874,7 +877,7 @@ input[type="radio"].visually-hidden {
   position: relative;
 }
 
-.main-catalog-list li::before {
+.main-catalog-list-item::before {
   content: "";
   position: absolute;
   top: -40px;
@@ -886,7 +889,7 @@ input[type="radio"].visually-hidden {
   background-repeat: no-repeat;
 }
 
-.main-catalog-list li:hover::before  {
+.main-catalog-list-item:hover::before  {
   background-image: url("../img/browser-active.svg");
 }
 
@@ -1114,7 +1117,6 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
   border: none;
 
-  outline: none;
   cursor: pointer;
 }
 
@@ -1148,29 +1150,34 @@ input[type="radio"].visually-hidden {
   background-color: #ffeeee;
 }
 
+.modal-contact-us .login {
+  width: 720px;
+}
+
 .modal-contact-us .name {
   margin: 0;
   margin-right: 40px;
   padding: 0;
-
-  width: 360px;
-  height: 50px;
 }
 
-.modal-contact-us .email {
-  margin: 0;
-  padding: 0;
-
+.login input[type="text"],
+.login input[type="password"] {
+  box-sizing: border-box;
   width: 360px;
-  height: 50px;
+  padding: 15px 14px;
+  
+  font: inherit;
+  color: #000000;
 }
 
-.modal-contact-us .text {
-  margin: 0;
-  padding: 0;
-
+.send input[type="text"] {
+  box-sizing: border-box;
   width: 760px;
-  height: 118px;
+  padding: 13px 14px;
+  padding-bottom: 89px;
+  
+  font: inherit;
+  color: #000000;
 }
 
 .modal-contact-us .login {
@@ -1180,6 +1187,15 @@ input[type="radio"].visually-hidden {
 .modal-contacts-us .send {
   display: flex;
   flex-direction: column;
+}
+
+.send .button {
+  width: 260px;
+}
+
+.modal-contact-us:invalid {
+  color: #e74246;
+  border-color: #e74246;
 }
 /*Range*/
 .range-filter {
