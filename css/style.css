@@ -169,7 +169,7 @@ input[type="radio"].visually-hidden {
   height: 10px;
   margin-left: -100px;
   text-align: center;
-  z-index: 1000;
+  z-index: 1;
 }
 
 .slider-controls label{
@@ -546,12 +546,13 @@ input[type="radio"].visually-hidden {
   height: 416px;
   height: 416px;
   margin: 0 auto;
+  margin-bottom: 69px;
 
   background-image: url("../img/map.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  margin-bottom: 69px;
+  background-color: #e9e5dc;
 }
 
 .information {
@@ -1047,14 +1048,15 @@ input[type="radio"].visually-hidden {
   /*display: none;*/
   position: fixed;
   top: 20px;
-  left: 1013px;
+  left: 50%;
 
   width: 870px;
   margin: 0 auto;
-  margin-left: -540px;
+  margin-left: -485px;
   padding-top: 65px;
   padding-bottom: 87px;
   padding-left: 100px;
+  z-index: 2;
 
   background-color: #ffffff;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7);
