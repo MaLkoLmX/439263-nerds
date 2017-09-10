@@ -634,7 +634,6 @@ input[type="radio"].visually-hidden {
   line-height: 36px;
 }
 
-/*Catalog*/
 .main-title {
   width: 100%;
   text-align: center;
@@ -752,7 +751,7 @@ input[type="radio"].visually-hidden {
 
   background-color: #a6a6a6;
 }
-/*checkbox*/
+
 .filter-input-checkbox {
   display: none;
 }
@@ -1025,7 +1024,7 @@ input[type="radio"].visually-hidden {
 .pagination .next {
   width: 270px;
 }
-/*Modal*/
+
 @keyframes bounce {
   0% {
     transform: translateY(-2000px);
@@ -1045,7 +1044,7 @@ input[type="radio"].visually-hidden {
 }
 
 .modal {
-  /*display: none;*/
+  display: none;
   position: fixed;
   top: 20px;
   left: 50%;
@@ -1088,7 +1087,7 @@ input[type="radio"].visually-hidden {
 }
 
 .modal-contact-us input[type="text"],
-.modal-contact-us input[type="password"] {
+.modal-contact-us input[type="email"] {
   box-sizing: border-box;
   margin-top: 8px;
 
@@ -1160,7 +1159,7 @@ input[type="radio"].visually-hidden {
 }
 
 .login input[type="text"],
-.login input[type="password"] {
+.login input[type="email"] {
   box-sizing: border-box;
   width: 360px;
   padding: 10px 14px;
@@ -1197,7 +1196,7 @@ input[type="radio"].visually-hidden {
   color: #e74246;
   border-color: #e74246;
 }
-/*Range*/
+
 .range-filter {
   margin: 0;
   width: 260px;
