@@ -15,8 +15,8 @@ link.addEventListener("click", function (evt) {
   });
 
 close.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    popup.classList.remove("modal-show");
+  evt.preventDefault();
+  popup.classList.remove("modal-show");
   });
 
 form.addEventListener("submit", function (evt) {
@@ -30,7 +30,7 @@ form.addEventListener("submit", function (evt) {
 
 window.addEventListener("keydown", function (evt) {
     if (evt.keyCode === 27) {
-      if (popup.classList.contains("modal-show")) {
+    if (popup.classList.contains("modal-show")) {
         popup.classList.remove("modal-show");
       }
     }

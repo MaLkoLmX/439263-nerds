@@ -48,11 +48,6 @@ input[type="radio"].visually-hidden {
 
   display: flex;
   justify-content: space-between;
-
-  font-size: 16px;
-  line-height: 30px;
-  color: #000000;
-  text-transform: uppercase;
 }
 
 .main-header-logo {
@@ -77,9 +72,13 @@ input[type="radio"].visually-hidden {
   margin-left: auto;
   padding-left: 41px;
 
-  color: #000000;
   list-style: none;
   font-weight: 500;
+
+  font-size: 16px;
+  line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
 
   background-image: url("../img/basket.svg");
   background-repeat: no-repeat;
@@ -98,6 +97,11 @@ input[type="radio"].visually-hidden {
   flex-wrap: wrap;
   width: 440px;
   list-style: none;
+
+  font-size: 16px;
+  line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
 }
 
 .site-navigation a {
@@ -134,7 +138,7 @@ input[type="radio"].visually-hidden {
 
 .slider {
   position: relative;
-  margin-bottom: 84px;
+  margin-bottom: 80px;
 
   background-color: #eeeeee;
 }
@@ -173,13 +177,16 @@ input[type="radio"].visually-hidden {
   padding: 0 20px;
   margin: 0px auto;
   display: none;
+
+  font-size: 16px;
+  line-height: 24px;
 }
   
 .slide-title {
   display: block;
   width: 520px;
   margin: 0;
-  padding-top: 63px;
+  padding-top: 61px;
 
   font-size: 55px;
   line-height: 55px;
@@ -195,7 +202,7 @@ input[type="radio"].visually-hidden {
 
 .main-advertising .button {
   width: 240px;
-  margin-top: 38px;
+  margin-top: 39px;
 }
 
 .main-advertising:nth-child(1) {
@@ -298,8 +305,11 @@ input[type="radio"].visually-hidden {
   display: flex;
   padding: 0;
   margin: 0 auto;
-  padding-bottom: 83px;
+  padding-bottom: 80px;
   width: 1160px;
+
+  font-size: 16px;
+  line-height: 24px;
 
   border-bottom: 2px solid #eeeeee;
 
@@ -320,6 +330,7 @@ input[type="radio"].visually-hidden {
 .main-offers-list h3 {
   margin: 0;
   margin-top: 17px;
+
   font-size: 24px;
   line-height: 30px;
   font-weight: bold;
@@ -327,7 +338,7 @@ input[type="radio"].visually-hidden {
 }
 
 .main-offers-list-item .button {
-  margin-top: 30px;
+  margin-top: 33px;
 }
 
 .description {
@@ -341,7 +352,7 @@ input[type="radio"].visually-hidden {
   width: 1160px;
   padding: 0 20px;
   padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 48px;
   margin: 0 auto;
 }
 
@@ -349,11 +360,15 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
   width: 660px;
+
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .about-us h3 {
   margin: 0;
-  margin-top: 33px;
+  margin-top: 34px;
+
   font-size: 45px;
   line-height: 45px;
   font-weight: 500;
@@ -363,8 +378,6 @@ input[type="radio"].visually-hidden {
   margin: 0;
   margin-top: 42px;
 
-  font-size: 16px;
-  line-height: 24px;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -372,35 +385,35 @@ input[type="radio"].visually-hidden {
 .about-us p {
   margin: 0;
   margin-top: 34px;
-  margin-bottom: 42px;
+  margin-bottom: 39px;
 }
 
 .about-us-list {
-  margin-top: 20px;
+  margin-top: 24px;
+  padding-left: 37px;
   list-style: none;
+
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .about-us-list li {
   position: relative;
 
-  margin-bottom: 30px;
+  margin-bottom: 24px;
 }
 
 .about-us-list li::before {
   content: "";
 
   position: absolute;
-  top: 11px;
+  top: 10px;
   left: -37px;
 
   width: 25px;
   height: 2px;
 
   background-color: #fb565a;
-}
-
-.about-us-list li:nth-child(2) {
-  margin-bottom: 23px;
 }
 
 .aside {
@@ -419,22 +432,22 @@ input[type="radio"].visually-hidden {
 }
 
 .aside-table {
-  padding-top: 39px;
+  padding-top: 37px;
 }
 
 .aside-table td {
-  padding-right: 15px;
+  padding-right: 10px;
 }
 
 .aside-table-percentages {
   font-size: 45px;
-  line-height: 47px;
+  line-height: 45px;
   font-weight: bold;
   text-align: center;
 }
 
 .aside-table-percentages td:nth-child(3) {
-  padding-right: 50px;
+  padding-right: 40px;
 }
 
 .aside-table-scroll {
@@ -532,9 +545,6 @@ input[type="radio"].visually-hidden {
 
 .footer {
   width: 100%;
-  color: #666666;
-  font-size: 16px;
-  line-height: 18px;
 }
 
 .footer h2 {
@@ -565,8 +575,11 @@ input[type="radio"].visually-hidden {
   margin-left: -582px;
   width: 270px;
   height: 256px;
-  padding-left: 49px;
-  padding-top: 55px;
+  padding-left: 52px;
+  padding-top: 47px;
+
+  font-size: 16px;
+  line-height: 18px;
 
   background-color: white;
 }
@@ -578,8 +591,10 @@ input[type="radio"].visually-hidden {
 
 .information h3 {
   margin: 0;
-  margin-bottom: 31px;
+  margin-bottom: 24px;
 
+  font-size: 18px;
+  line-height: 30px;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -587,7 +602,7 @@ input[type="radio"].visually-hidden {
 .button-information {
   width: 220px;
   padding: 16px 0;
-  margin-top: 40px;
+  margin-top: 38px;
 }
 
 .footer-social {
@@ -605,12 +620,17 @@ input[type="radio"].visually-hidden {
 }
 
 .discount b {
+  font-size: 36px;
+  line-height: 36px;
   font-weight: bold;
 }
 
 .discount p {
   margin: 0;
   margin-top: 11px;
+
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .footer-social-list {
@@ -623,7 +643,7 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-social-list li {
-  padding-right: 12px;
+  padding-right: 10px;
 }
 
 .button-social {
@@ -660,7 +680,7 @@ input[type="radio"].visually-hidden {
   margin: 0;
   margin-bottom: 60px;
   padding-top: 60px;
-  padding-bottom: 105px;
+  padding-bottom: 109px;
 
   font-size: 55px;
   line-height: 55px;
@@ -680,7 +700,7 @@ input[type="radio"].visually-hidden {
 .main-catalog .sorting {
   display: flex;
   justify-content: space-arround;
-  padding-bottom: 93px;
+  padding-bottom: 96px;
 
   text-transform: uppercase;
 }
@@ -692,7 +712,7 @@ input[type="radio"].visually-hidden {
   width: 1160px;
   margin: 0 auto;
   padding: 0 20px;
-  margin-bottom: 64px;
+  margin-bottom: 60px;
 }
 
 .main-catalog-list {
@@ -724,8 +744,11 @@ input[type="radio"].visually-hidden {
 
 .main-filters-filter-item {
   margin: 0;
-  padding-left: 33px;
-  margin-bottom: 47px;
+  padding-left: 36px;
+  margin-bottom: 52px;
+
+  font-size: 16px;
+  line-height: 20px;
   list-style: none;
 }
 
@@ -736,41 +759,33 @@ input[type="radio"].visually-hidden {
 .main-filters-filter-item li {
   position: relative;
 
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 
   cursor: pointer;
 }
 
 .radio input[type="radio"] + .radio-indicator {
   position: absolute;
-  top: 0;
+  top: -2px;
   left: -35px;
 
-  width: 17px;
-  height: 17px;
+  width: 25px;
+  height: 25px;
 
-  border: 4px solid #a6a6a6;
-  border-radius: 50%;
+  background-image: url("../img/radio-off.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  opacity: 0.4;
 }
 
-.radio input[type="radio"]:focus + .radio-indicator {
-  border-color: #4d4d4d;
+.radio input[type="radio"]:focus + .radio-indicator,
+.radio input[type="radio"]:hover + .radio-indicator {
+  opacity: 1;
 }
 
-.radio input[type="radio"]:checked + .radio-indicator::before,
-.radio input[type="radio"]:checked + .radio-indicator::after {
-  content: "";
-
-  position: absolute;
-  top: 4px;
-  left: 4px;
-
-  width: 9px;
-  height: 9px;
-
-  border-radius: 50%;
-
-  background-color: #a6a6a6;
+.radio input[type="radio"]:checked + .radio-indicator {
+  background-image: url("../img/radio-on.svg");
 }
 
 .filter-input-checkbox {
@@ -785,59 +800,37 @@ input[type="radio"].visually-hidden {
   width: 23px;
   height: 23px;
 
-  border: 2px solid #a6a6a6;
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  opacity: 0.4;
 }
 
-.checkbox input[type="checkbox"]:focus + .checkbox-indicator {
-  border-color: #4d4d4d;
+.checkbox input[type="checkbox"]:focus + .checkbox-indicator,
+.checkbox input[type="checkbox"]:hover + .checkbox-indicator {
+  opacity: 1;
 }
 
-.checkbox input[type="checkbox"]:checked + .checkbox-indicator::before {
-  content: "";
+.checkbox input[type="checkbox"]:checked + .checkbox-indicator {
+  width: 27px;
 
-  position: absolute;
-  top: 7px;
-  left: 8px;
-
-  width: 22px;
-  height: 3px;
-
-  background-color: #a6a6a6;
-}
-
-.checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
-  content: "";
-
-  position: absolute;
-  top: 10px;
-  left: 4px;
-
-  width: 8px;
-  height: 3px;
-
-  background-color: #a6a6a6;
-}
-
-.checkbox input[type="checkbox"]:checked + .checkbox-indicator::before {
-  transform: rotate(-45deg);
-}
-
-.checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
-  transform: rotate(45deg);
+  background-image: url("../img/checkbox-on.svg");
 }
 
 .main-filters-filter h3 {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 21px;
 
   font-size: 18px;
-  line-height: 30px;
+  line-height: 18px;
   font-weight: bold;
   text-transform: uppercase;
 }
 
 .main-filters-filter h3:nth-child(1) {
-  margin-bottom: 46px;
+  margin: 0;
+  margin-bottom: 56px;
 }
 
 .filter-button {
@@ -851,6 +844,7 @@ input[type="radio"].visually-hidden {
 
   color: #000000;
   background-color: #eeeeee;
+  font-family: inherit;
 
   border: none;
 }
@@ -886,7 +880,18 @@ input[type="radio"].visually-hidden {
   width: 360px;
   margin: 0;
   margin-left: auto;
+
+  font-size: 14px;
+  line-height: 18px;
   list-style: none;
+}
+
+.main-catalog-type li:nth-child(3) {
+  margin-left: 8px;
+}
+
+.main-catalog-type-current {
+  margin-right: 10px;
 }
 
 .main-catalog-list-item {
@@ -944,22 +949,29 @@ input[type="radio"].visually-hidden {
   display: none;
   bottom: 0;
   width: 360px;
-  padding-top: 10px;
-  padding-bottom: 45px;
+  padding-top: 28px;
+  padding-bottom: 44px;
 
+  font-size: 16px;
+  line-height: 18px;
   text-align: center;
 
   background-color: #eeeeee;
 }
 
-.card h3 {
-  margin: 0;
-  margin-top: 10px;
+.modal-site {
+  margin-top: 30px;
+  color: #000000;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
 .card p {
   margin: 0;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 .main-catalog-list-item:hover .card {
@@ -999,18 +1011,10 @@ input[type="radio"].visually-hidden {
 
 .button-price {
   margin: 0 auto;
-  margin-top: 29px;
+  margin-top: 30px;
+  padding: 16px 0;
   width: 200px;
   text-transform: uppercase;
-}
-
-.modal-site {
-  color: #000000;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 30px;
-  text-transform: uppercase;
-  text-decoration: none;
 }
 
 .pagination {
@@ -1019,13 +1023,16 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
 
+  font-size: 16px;
+  line-height: 18px;
+
   list-style: none;
 }
 
 .pagination a {
   display: block;
-  padding: 11px 19px;
-  margin-right: 17px;
+  padding: 16px 20px;
+  margin-right: 13px;
 
   text-align: center;
   color: #000000;
@@ -1047,6 +1054,7 @@ input[type="radio"].visually-hidden {
 
 .pagination-active a {
   outline: 3px solid #eeeeee;
+  outline-offset: -3px;
   background-color: #ffffff;
 }
 
@@ -1216,6 +1224,7 @@ input[type="radio"].visually-hidden {
   margin-top: 50px;
   width: 260px;
   border: none;
+  font-family: inherit;
 }
 
 .modal-contact-us:invalid {
@@ -1226,7 +1235,7 @@ input[type="radio"].visually-hidden {
 .range-filter {
   margin: 0;
   width: 260px;
-  margin-bottom: 58px;
+  margin-bottom: 64px;
 }
 
 .range-controls {
@@ -1279,9 +1288,12 @@ input[type="radio"].visually-hidden {
 }
 
 .price-controls label {
-  font-size: 16px;
   display: inline-block;
   width: 50%;
+
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
 }
 
 .max-price {
