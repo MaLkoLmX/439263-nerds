@@ -97,11 +97,6 @@ input[type="radio"].visually-hidden {
   flex-wrap: wrap;
   width: 440px;
   list-style: none;
-
-  font-size: 16px;
-  line-height: 30px;
-  color: #000000;
-  text-transform: uppercase;
 }
 
 .site-navigation a {
@@ -111,6 +106,9 @@ input[type="radio"].visually-hidden {
 
   color: #000000;
   font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  text-transform: uppercase;
 }
 
 .site-navigation a:hover,
@@ -138,12 +136,12 @@ input[type="radio"].visually-hidden {
 
 .slider {
   position: relative;
-  margin-bottom: 80px;
+  margin-bottom: 81px;
 
   background-color: #eeeeee;
 }
 
-.slider input[type=radio] {
+.slider input[type="radio"] {
   position: absolute;
   opacity: 0;
 }
@@ -173,7 +171,7 @@ input[type="radio"].visually-hidden {
 
 .main-advertising {
   width: 1160px;
-  height: 413px;
+  min-height: 413px;
   padding: 0 20px;
   margin: 0px auto;
   display: none;
@@ -197,12 +195,12 @@ input[type="radio"].visually-hidden {
 .main-advertising p {
   display: block;
   width: 410px;
-  margin-top: 24px;
+  margin-top: 25px;
 }
 
 .main-advertising .button {
   width: 240px;
-  margin-top: 39px;
+  margin-top: 40px;
 }
 
 .main-advertising:nth-child(1) {
@@ -243,7 +241,7 @@ input[type="radio"].visually-hidden {
 
 .button {
   display: block;
-  padding: 13px 0;
+  padding: 16px 0;
   width: 160px;
   text-align:center;
   border-radius:3px;
@@ -253,6 +251,8 @@ input[type="radio"].visually-hidden {
   text-decoration: none;
   text-transform:uppercase;
   font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
 
   background-color: #fb565a;
 }
@@ -432,11 +432,11 @@ input[type="radio"].visually-hidden {
 }
 
 .aside-table {
-  padding-top: 37px;
+  padding-top: 39px;
 }
 
 .aside-table td {
-  padding-right: 10px;
+  padding-right: 17px;
 }
 
 .aside-table-percentages {
@@ -446,8 +446,14 @@ input[type="radio"].visually-hidden {
   text-align: center;
 }
 
+.aside-table-percentages sup {
+  top: -17px;
+  font-size: 25px;
+  line-height: 25px;
+}
+
 .aside-table-percentages td:nth-child(3) {
-  padding-right: 40px;
+  padding-right: 45px;
 }
 
 .aside-table-scroll {
@@ -485,8 +491,8 @@ input[type="radio"].visually-hidden {
 }
 
 .partners-items a {
-  margin-left: 30px;
-  margin-right: 40px;
+  margin-left: 31px;
+  margin-right: 42px;
   opacity: 0.2;
 }
 
@@ -495,8 +501,8 @@ input[type="radio"].visually-hidden {
 }
 
 .partners-items li:nth-child(3) {
-  margin-right: 20px;
-  padding-right: 10px;
+  margin-right: 25px;
+
 }
 
 .partners-items li:nth-child(2)::before {
@@ -505,7 +511,7 @@ input[type="radio"].visually-hidden {
   height: 52px;
 
   position: absolute;
-  left: -15px;
+  left: -13px;
   top: 18px;
 
   background-color: #eeeeee;
@@ -529,7 +535,7 @@ input[type="radio"].visually-hidden {
   height: 52px;
 
   position: absolute;
-  right: -5px;
+  right: -10px;
 
   background-color: #eeeeee;
 }
@@ -574,7 +580,7 @@ input[type="radio"].visually-hidden {
   top: 55px;
   margin-left: -582px;
   width: 270px;
-  height: 256px;
+  min-height: 256px;
   padding-left: 52px;
   padding-top: 47px;
 
@@ -720,7 +726,7 @@ input[type="radio"].visually-hidden {
   flex-wrap: wrap;
   padding: 0;
   margin: 0;
-  margin-bottom: 61px;
+  margin-bottom: 59px;
 
   list-style: none;
 }
@@ -745,21 +751,21 @@ input[type="radio"].visually-hidden {
 .main-filters-filter-item {
   margin: 0;
   padding-left: 36px;
-  margin-bottom: 52px;
+  margin-bottom: 50px;
 
-  font-size: 16px;
-  line-height: 20px;
   list-style: none;
 }
 
-.filter-input-radio {
-  display: none;
+.main-filters-filter-item .radio,
+.main-filters-filter-item .checbox {
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .main-filters-filter-item li {
   position: relative;
 
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 
   cursor: pointer;
 }
@@ -788,8 +794,14 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/radio-on.svg");
 }
 
-.filter-input-checkbox {
-  display: none;
+.radio input[type="radio"]:disabled + .radio-indicator {
+  opacity: 0.1;
+}
+
+.radio input[type="radio"]:focus + .radio-indicator {
+  border-color: #663d15;
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
 }
 
 .checkbox input[type="checkbox"] + .checkbox-indicator {
@@ -818,6 +830,12 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/checkbox-on.svg");
 }
 
+.checkbox input[type="checkbox"]:focus + .checkbox-indicator {
+  border-color: #663d15;
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
 .main-filters-filter h3 {
   margin: 0;
   margin-bottom: 21px;
@@ -830,12 +848,12 @@ input[type="radio"].visually-hidden {
 
 .main-filters-filter h3:nth-child(1) {
   margin: 0;
-  margin-bottom: 56px;
+  margin-bottom: 55px;
 }
 
 .filter-button {
   width: 260px;
-  margin-top: 53px;
+  margin-top: 50px;
 
   font-size: 16px;
   line-height: 18px;
@@ -1023,28 +1041,29 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
 
-  font-size: 16px;
-  line-height: 18px;
-
   list-style: none;
 }
 
 .pagination a {
   display: block;
-  padding: 16px 20px;
-  margin-right: 13px;
+  padding: 13px 17px;
+  margin-right: 12px;
 
   text-align: center;
   color: #000000;
   text-decoration: none;
   font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
 
+  border: 3px solid #eeeeee;
   background-color: #eeeeee;
 }
 
 .pagination a:hover,
 .pagination a:focus {
   background-color: #dfdfdf;
+  border-color: #dfdfdf;
 }
 
 .pagination a:active {
@@ -1053,8 +1072,6 @@ input[type="radio"].visually-hidden {
 }
 
 .pagination-active a {
-  outline: 3px solid #eeeeee;
-  outline-offset: -3px;
   background-color: #ffffff;
 }
 
@@ -1075,6 +1092,26 @@ input[type="radio"].visually-hidden {
   }
   100% {
     transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
   }
 }
 
@@ -1100,6 +1137,10 @@ input[type="radio"].visually-hidden {
   display: block;
 
   animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
 }
 
 .modal-contact-us {
@@ -1235,7 +1276,7 @@ input[type="radio"].visually-hidden {
 .range-filter {
   margin: 0;
   width: 260px;
-  margin-bottom: 64px;
+  margin-bottom: 63px;
 }
 
 .range-controls {
