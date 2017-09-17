@@ -171,13 +171,11 @@ input[type="radio"].visually-hidden {
 
 .main-advertising {
   width: 1160px;
-  min-height: 413px;
+  min-height: 333px;
   padding: 0 20px;
+  padding-bottom: 79px;
   margin: 0px auto;
   display: none;
-
-  font-size: 16px;
-  line-height: 24px;
 }
   
 .slide-title {
@@ -196,6 +194,9 @@ input[type="radio"].visually-hidden {
   display: block;
   width: 410px;
   margin-top: 25px;
+
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .main-advertising .button {
@@ -265,6 +266,7 @@ input[type="radio"].visually-hidden {
 .button:active {
   color: #e37376;
   background-color: #d7373b;
+  box-shadow: inset 0 3px 0 0 rgba(0,0,0,0.1)
 }
 
 .button-green {
@@ -432,7 +434,7 @@ input[type="radio"].visually-hidden {
 }
 
 .aside-table {
-  padding-top: 39px;
+  padding-top: 37px;
 }
 
 .aside-table td {
@@ -469,7 +471,7 @@ input[type="radio"].visually-hidden {
   width: 1200px;
   margin: 0 auto;
   padding-top: 45px;
-  padding-bottom: 38px;
+  padding-bottom: 35px;
   border-top: 2px solid #eeeeee;
   border-bottom: 2px solid #eeeeee;
   margin-bottom: 80px;
@@ -496,13 +498,20 @@ input[type="radio"].visually-hidden {
   opacity: 0.2;
 }
 
+.partners-items li:nth-child(1) {
+  margin-top: 9px;
+}
+
 .partners-items li:nth-child(2) {
-  margin-right: 20px;
+  margin-right: 7px;
 }
 
 .partners-items li:nth-child(3) {
   margin-right: 25px;
+}
 
+.partners-items li:nth-child(4) {
+  margin-top: 9px;
 }
 
 .partners-items li:nth-child(2)::before {
@@ -511,7 +520,7 @@ input[type="radio"].visually-hidden {
   height: 52px;
 
   position: absolute;
-  left: -13px;
+  left: -16px;
   top: 18px;
 
   background-color: #eeeeee;
@@ -523,7 +532,7 @@ input[type="radio"].visually-hidden {
   height: 52px;
 
   position: absolute;
-  right: -8px;
+  right: -4px;
   top: 18px;
 
   background-color: #eeeeee;
@@ -535,7 +544,7 @@ input[type="radio"].visually-hidden {
   height: 52px;
 
   position: absolute;
-  right: -10px;
+  right: -16px;
 
   background-color: #eeeeee;
 }
@@ -574,18 +583,21 @@ input[type="radio"].visually-hidden {
   background-color: #e9e5dc;
 }
 
+.footer-contacts .map {
+  width: 100%;
+  height: 100%;
+}
+
 .information {
   position: absolute;
   left: 50%;
   top: 55px;
-  margin-left: -582px;
+  margin-left: -580px;
   width: 270px;
-  min-height: 256px;
-  padding-left: 52px;
-  padding-top: 47px;
-
-  font-size: 16px;
-  line-height: 18px;
+  min-height: 209px;
+  padding-left: 50px;
+  padding-top: 48px;
+  padding-bottom: 47px;
 
   background-color: white;
 }
@@ -593,11 +605,15 @@ input[type="radio"].visually-hidden {
 .information p {
   display: block;
   width: 210px;
+  margin-bottom: 18px;
+
+  font-size: 16px;
+  line-height: 18px;
 }
 
 .information h3 {
   margin: 0;
-  margin-bottom: 24px;
+  margin-bottom: 23px;
 
   font-size: 18px;
   line-height: 30px;
@@ -606,9 +622,9 @@ input[type="radio"].visually-hidden {
 }
 
 .button-information {
-  width: 220px;
+  width: 219px;
   padding: 16px 0;
-  margin-top: 38px;
+  margin-top: 37px;
 }
 
 .footer-social {
@@ -649,7 +665,7 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-social-list li {
-  padding-right: 10px;
+  padding-right: 12px;
 }
 
 .button-social {
@@ -657,8 +673,8 @@ input[type="radio"].visually-hidden {
   align-items: center;
   justify-content: center;
   background-color: #e1e1e1;
-  width: 80px;
-  height: 80px;
+  width: 79px;
+  height: 79px;
   border-radius: 50%;
 }
 
@@ -669,6 +685,7 @@ input[type="radio"].visually-hidden {
 
 .button-social:active {
   background-color: #d7373b;
+  box-shadow: inset 0 3px 0 0 rgba(0,0,0,0.1)
 }
 
 .button-social:active path {
@@ -726,7 +743,7 @@ input[type="radio"].visually-hidden {
   flex-wrap: wrap;
   padding: 0;
   margin: 0;
-  margin-bottom: 59px;
+  margin-bottom: 58px;
 
   list-style: none;
 }
@@ -751,10 +768,12 @@ input[type="radio"].visually-hidden {
 .main-filters-filter-item {
   margin: 0;
   padding-left: 36px;
-  margin-bottom: 50px;
+  margin-bottom: 49px;
 
   list-style: none;
 }
+
+
 
 .main-filters-filter-item .radio,
 .main-filters-filter-item .checbox {
@@ -768,6 +787,14 @@ input[type="radio"].visually-hidden {
   margin-bottom: 15px;
 
   cursor: pointer;
+}
+
+.main-filters-filter-item li:nth-child(2) {
+  margin-top: 16px;
+}
+
+.main-filters-filter-item li:nth-child(3) {
+  margin-bottom: 17px;
 }
 
 .radio input[type="radio"] + .radio-indicator {
@@ -830,6 +857,10 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/checkbox-on.svg");
 }
 
+.checkbox input[type="checkbox"]:disabled + .checkbox-indicator {
+  opacity: 0.1;
+}
+
 .checkbox input[type="checkbox"]:focus + .checkbox-indicator {
   border-color: #663d15;
   outline: thin dotted;
@@ -853,7 +884,6 @@ input[type="radio"].visually-hidden {
 
 .filter-button {
   width: 260px;
-  margin-top: 50px;
 
   font-size: 16px;
   line-height: 18px;
@@ -875,6 +905,7 @@ input[type="radio"].visually-hidden {
 .filter-button:active {
   background-color: #d5d5d5;
   color: #959595;
+  box-shadow: inset 0 3px 0 1px rgba(0,0,0,0.1)
 }
 
 .main-catalog b {
@@ -1069,6 +1100,8 @@ input[type="radio"].visually-hidden {
 .pagination a:active {
   color: #959595;
   background-color: #d5d5d5;
+  border-color: #d5d5d5;
+  border-top: 3px solid #bfbfbf;
 }
 
 .pagination-active a {
@@ -1076,8 +1109,12 @@ input[type="radio"].visually-hidden {
 }
 
 .pagination .next {
-  width: 285px;
+  width: 260px;
   text-transform: uppercase;
+}
+
+.next a {
+  margin: 0;
 }
 
 @keyframes bounce {
@@ -1276,7 +1313,7 @@ input[type="radio"].visually-hidden {
 .range-filter {
   margin: 0;
   width: 260px;
-  margin-bottom: 63px;
+  margin-bottom: 61px;
 }
 
 .range-controls {
@@ -1285,7 +1322,7 @@ input[type="radio"].visually-hidden {
   padding-top: 39px;
   padding-right: 20px;
   padding-left: 20px;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
   
   border-radius: 5px;
   background-color: #f1f1f1;
@@ -1344,8 +1381,8 @@ input[type="radio"].visually-hidden {
 .price-controls input {
   font-size: 16px;
   width: 60px;
-  margin-left: 10px;
-  padding: 8px 10px;
+  margin-left: 8px;
+  padding: 9px 10px;
   text-align: center;
   color: #283136;
   border: none;
