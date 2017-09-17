@@ -762,9 +762,9 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-arround;
-      -ms-flex-pack: space-arround;
-          justify-content: space-arround;
+  -webkit-box-pack: space-around;
+      -ms-flex-pack: space-around;
+          justify-content: space-around;
   padding-bottom: 96px;
 
   text-transform: uppercase;
