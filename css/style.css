@@ -258,7 +258,7 @@ input[type="radio"].visually-hidden {
   padding: 16px 0;
   width: 160px;
   text-align:center;
-  border-radius:3px;
+  border-radius: 3px;
 
   color: #ffffff;
   text-align: center;
@@ -1138,6 +1138,7 @@ input[type="radio"].visually-hidden {
   display: block;
   padding: 13px 17px;
   margin-right: 12px;
+  border-radius: 3px;
 
   text-align: center;
   color: #000000;
